@@ -5,10 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Note to Hannah</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styles for burger menu */
+        #menuToggle {
+            display: none;
+            cursor: pointer;
+        }
+        
+        nav ul {
+            display: none;
+            list-style-type: none;
+        }
+        
+        nav ul li {
+            padding: 5px 0;
+        }
+        
+        #menuToggle:checked + nav ul {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header>
+        <!-- Burger Menu Toggle -->
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle">&#9776;</label> <!-- This represents the burger icon -->
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#photos">Photos</a></li>
+            </ul>
+        </nav>
             <h1>Love Note to Hannah</h1>
         </header>
         <main>
@@ -44,6 +74,16 @@
         I promise to continue to work on myself and become the man that you deserve, and together, we will create the happiness that we both deserve.
     </p>
             </section>
+            <main>
+            <!-- Existing content remains the same -->
+            <!-- ... -->
+
+            <!-- Placeholder for Photos Section -->
+            <section id="photos">
+                <h2>Photos</h2>
+                <!-- You can place your images or a gallery here -->
+            </section>
+        </main>
             <footer>
                 <p>With all my love,</p>
                 <p class="signature">Jacob</p>
